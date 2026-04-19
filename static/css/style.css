@@ -1,1 +1,28 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color:rgb(230, 225, 216);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+html{
+    background-color: pink;
+}
+p{
+ color: red;   
+}
+.base_box{
+    display: flex;
+    background-color: rgb(233, 240, 240);
+    height: 300px;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.20);
+    overflow: hidden;
+}
+.box_left{
+    display: flex;
+}
