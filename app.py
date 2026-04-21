@@ -1,8 +1,11 @@
 from flask import Flask,request,render_template,url_for
 app=Flask(__name__)
 
-@app.route("/")
+@app.route("/",methods=["GET","POST"])
 def login():
+    if request.method=="POST":
+        email=request.form["email"]
+        PS=request.form["PS"]
     return render_template("login.html")
 
 @app.route("/new")
