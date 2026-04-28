@@ -13,17 +13,19 @@
                 アカウントをお持ちの方は<br>
                 ログインしてください。
             </p>
-            <a href="#" class="switch-link">新規登録はこちら</a>
+            <a href="{{ url_for('new') }}" class="switch-link">新規登録はこちら</a>
         </div>
         <div class="box_right">
-          <h1>ログイン</h1><br>
-          <label for="email">メールアドレス</label><br>
-          <input type="email" id="email" name="email">
-          <br>
-          <label for="PS">PS</label><br>
-          <input type="password" id="PS" name="PS">
-          <br>
-          <button type="submit">ログイン</button>
+            <h1>ログイン</h1><br>
+            <form method="post">
+            <label for="email">メールアドレス</label><br>
+                <input type="email" id="email" name="email">
+            <br>
+            <label for="PS">PS</label><br>
+                <input type="password" id="PS" name="password">
+            <br>
+            <button type="submit" class="log_BTN">ログイン</button>
+            </form>
         </div>
     </div>
 </body>
