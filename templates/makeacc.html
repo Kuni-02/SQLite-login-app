@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>新規作成</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+</head>
+<body>
+    <div class="base_box">
+        <div class="box_left_new">
+            <h1>新規作成</h1>
+            <h3>メールアドレスとパスワードを入力してください．</h3>
+        </div>
+        <div class="box_right">
+            <form method="post">
+            <label for="email">メールアドレス</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">パスワード</label><br>
+            <input type="password" id="password" name="password"><br>
+            <button type="submit">作成</button>
+        </form>
+        </div>
+    </div>
+</body>
